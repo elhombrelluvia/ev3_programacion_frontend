@@ -1,0 +1,107 @@
+body {
+  background-color: #f0f4f8;
+  /* Usar un degradado suave para darle profundidad */
+  background-image: 
+    linear-gradient(135deg, #e9f0f8 25%, #cfd9e8 100%),
+    url('https://www.transparenttextures.com/patterns/diagmonds.png');
+  background-repeat: repeat;
+  background-attachment: fixed; /* Para que el patrón no se mueva al hacer scroll */
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #343a40;
+}
+
+/* Opcional: agrega una sombra ligera a los contenedores para dar más relieve */
+#formContainer, #informe {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  color: #333;
+}
+
+.table {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Para el navbar, hacer un degradado sutil o sombra */
+.navbar {
+  background: linear-gradient(90deg, #343a40 0%, #212529 100%);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+}
+
+/* Si quieres un footer fijo o sticky para más estructura */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+
+h1, h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+pre {
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#formContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+#informe {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Espaciado y consistencia para botones */
+button,
+.btn {
+  margin: 5px 5px 5px 0;
+}
+
+.btn-accion {
+  margin: 0 2px;
+}
+
+/* Responsive menor a 576px */
+@media (max-width: 576px) {
+  button,
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
